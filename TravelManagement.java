@@ -24,7 +24,6 @@ public class TravelManagement {
                 case 2:
                     System.out.println("Enter the index to insert: ");
                     int index = sc.nextInt();
-                    // Optional safety check for index limits
                     if (index >= 0 && index <= cities.size()) {
                         System.out.println("Enter a City to Add :");
                         String insertCity = sc.next();
@@ -59,7 +58,6 @@ public class TravelManagement {
                     String sL = sc.next();
                     boolean foundAny = false;
                     for (String s : cities) {
-                        // Fixed the capitalization issue and added case-insensitivity
                         if (s.toLowerCase().startsWith(sL.toLowerCase())) {
                             System.out.println(s);
                             foundAny = true;
@@ -83,7 +81,5 @@ public class TravelManagement {
                     break;
             }
         } while (choice != 6);
-        
-        sc.close(); // Good practice to close resources
     }
 }
