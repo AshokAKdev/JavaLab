@@ -25,7 +25,7 @@ public class EmployeeManagement {
                 switch(choice) {
                     case 1:
                         System.out.print("Enter Employee ID: ");
-                        int id = sc.next;
+                        int id = sc.nextInt();
                         sc.nextLine();
                         System.out.print("Enter Employee Name: ");
                         String name = sc.nextLine();
